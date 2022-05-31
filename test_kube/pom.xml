@@ -30,6 +30,7 @@
 	</dependencies>
 
 	<build>
+	<finalName>test_kube</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

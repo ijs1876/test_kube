@@ -1,0 +1,20 @@
+apiVersion: apps/v1 # for versions before 1.8.0 use apps/v1beta1
+kind: Deployment
+metadata:
+  name: test_kube-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test_kube
+  template:
+    metadata:
+      labels:
+        app: test_kube
+    spec:
+      containers:
+      - name: test_kube
+        image: i1876/test_kube:0.0.1
+        ports:
+        - containerPort: 8092
+        imagePullPolicy: Always

@@ -4,9 +4,9 @@ metadata:
   name: config-service
 spec:
   ports:
-    - name: "9001"
-      port: 9001
-      targetPort: 9001
+    - name: "8092"
+      port: 8092
+      targetPort: 8092
   selector:
     app: config
   type: NodePort

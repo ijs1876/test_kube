@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: config-service
+  name: testkube-service
 spec:
   ports:
     - name: "8092"
       port: 8092
       targetPort: 8092
   selector:
-    app: config
+    app: testkube
   type: NodePort

@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test_kube
+      app: testkube
   template:
     metadata:
       labels:
-        app: test_kube
+        app: testkube
     spec:
       containers:
-      - name: test_kube
-        image: i1876/test_kube:0.0.1
+      - name: testkube
+        image: i1876/testkube:0.0.1
         ports:
         - containerPort: 8092
         imagePullPolicy: Always

@@ -1,4 +1,6 @@
 FROM openjdk:8-jre-slim
+ARG port
+EXPOSE ${port}
 COPY ./target/test_kube.jar test_kube.jar
 ENV JAVA_OPTS=""
 ENTRYPOINT [ "sh", "-c" ]

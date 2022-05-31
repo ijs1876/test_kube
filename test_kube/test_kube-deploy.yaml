@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: testkube
-        image: i1876/testkube:0.0.1
+        image: i1876/test_kube:0.0.1
         ports:
         - containerPort: 8092
         imagePullPolicy: Always
